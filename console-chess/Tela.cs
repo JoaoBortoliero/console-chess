@@ -1,4 +1,4 @@
-﻿using console_chess.tabuleiro;
+﻿using tabuleiro;
 
 namespace console_chess
 {

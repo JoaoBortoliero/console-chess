@@ -1,4 +1,4 @@
-﻿namespace console_chess.tabuleiro
+﻿namespace tabuleiro
 {
     internal class Peca
     {
