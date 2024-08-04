@@ -13,7 +13,13 @@ try
 
         Console.Write("\nOrigem: ");
         Posicao origem = Tela.LerPosicaoXadrez().ToPosicao();
-        Console.Write("Destino: ");
+
+        bool[,] posicoesPossiveis = partida.Tab.Peca(origem).MovimentosPossiveis();
+
+        Console.Clear();
+        Tela.ImprimirTabuleiro(partida.Tab, posicoesPossiveis);
+
+        Console.Write("\nDestino: ");
         Posicao destino = Tela.LerPosicaoXadrez().ToPosicao();
 
         partida.ExecutaMovimento(origem, destino);
